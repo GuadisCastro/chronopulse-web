@@ -34,6 +34,7 @@
             }
         }
     </script>
+    <!-- Tu Favicon -->
     <link rel="icon" type="image/jpeg" href="Favicon_v2.jpg">
     <style>
         .glow-red { text-shadow: 0 0 20px rgba(255, 0, 51, 0.5); }
@@ -47,12 +48,12 @@
     <header class="border-b border-brand-border bg-brand-dark/90 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="Pulse Race_v5.png" alt="Chrono Pulse" class="h-12 md:h-14 w-auto object-contain">
+                <!-- Tu Logo Principal -->
+                <img src="ChronoPulse.png" alt="Chrono Pulse" class="h-12 md:h-14 w-auto object-contain">
                 <span class="hidden md:inline-block text-xs font-mono bg-brand-border px-2 py-1 rounded text-brand-green border border-[#333]">v00:17.086</span>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
                 <a href="#caracteristicas" class="hover:text-brand-red transition-colors">Características</a>
-                <a href="#galeria" class="hover:text-brand-red transition-colors">Interfaz</a>
                 <a href="#planes" class="hover:text-brand-red transition-colors">Inversión</a>
                 <a href="#descargas" class="hover:text-brand-red transition-colors">Acceso Clientes</a>
             </nav>
@@ -98,12 +99,13 @@
                 </div>
             </div>
             
-            <!-- Imagen Hero -->
-            <div class="relative group mt-8 lg:mt-0">
+            <!-- Imagen Hero (Tu Logo Principal adaptado a la sección) -->
+            <div class="relative group mt-8 lg:mt-0 flex justify-center lg:justify-end">
                 <div class="absolute -inset-2 bg-gradient-to-r from-brand-red to-brand-green rounded-xl blur-lg opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                <div class="relative bg-brand-card p-2 rounded-xl border border-[#333] shadow-2xl">
-                    <img src="010.webp" alt="Resultados Pulse Race" class="w-full h-auto rounded-lg object-cover">
-                    <!-- Overlay de datos -->
+                <div class="relative bg-brand-card p-6 rounded-xl border border-[#333] shadow-2xl w-full max-w-md flex items-center justify-center">
+                    <img src="ChronoPulse.png" alt="Sistema Chrono Pulse" class="w-full h-auto object-contain drop-shadow-[0_0_15px_rgba(255,0,51,0.2)]">
+                    
+                    <!-- Overlay de datos decorativo -->
                     <div class="absolute bottom-4 right-4 bg-black/80 backdrop-blur border border-brand-border px-4 py-2 rounded shadow-lg">
                         <p class="text-[10px] text-gray-400 uppercase tracking-wider mb-1">Último registro</p>
                         <p class="font-display font-bold text-xl text-white">00:17.<span class="text-brand-red">086</span></p>
@@ -166,42 +168,12 @@
         </div>
     </section>
 
-    <!-- GALERÍA DE RENDERS -->
+    <!-- GALERÍA DE RENDERS (OCULTA TEMPORALMENTE PARA NO ROMPER EL DISEÑO SIN LAS IMÁGENES) -->
+    <!--
     <section id="galeria" class="py-24 bg-[#111] border-b border-brand-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-display font-bold text-center mb-12">Interfaz diseñada para la velocidad de la competencia</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Imagen 1 -->
-                <div class="bg-brand-card rounded-lg overflow-hidden border border-brand-border hover:border-brand-red/50 transition-all duration-300 group relative">
-                    <img src="002.webp" alt="Interfaz Pulse Race" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-sm font-semibold text-white">Dashboard Limpio</span>
-                    </div>
-                </div>
-                <!-- Imagen 2 -->
-                <div class="bg-brand-card rounded-lg overflow-hidden border border-brand-border hover:border-brand-red/50 transition-all duration-300 group relative">
-                    <img src="005.webp" alt="Gestión de Participantes" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-sm font-semibold text-white">Gestión de Excel</span>
-                    </div>
-                </div>
-                <!-- Imagen 3 -->
-                <div class="bg-brand-card rounded-lg overflow-hidden border border-brand-border hover:border-brand-red/50 transition-all duration-300 group relative">
-                    <img src="008.webp" alt="Test de Hardware" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-sm font-semibold text-white">Testeo de Hardware</span>
-                    </div>
-                </div>
-                <!-- Imagen 4 -->
-                <div class="bg-brand-card rounded-lg overflow-hidden border border-brand-border hover:border-brand-red/50 transition-all duration-300 group relative">
-                    <img src="009.webp" alt="Sistema en Tiempo Real" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition-opacity">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-sm font-semibold text-white">Monitoreo en Vivo</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        ... (Código de la galería preparado para cuando tengas las capturas de la app) ...
     </section>
+    -->
 
     <!-- PLANES / INVERSIÓN -->
     <section id="planes" class="py-24 bg-brand-dark border-b border-brand-border">
@@ -283,7 +255,7 @@
     <!-- ZONA CLIENTES -->
     <section id="descargas" class="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-gradient-to-br from-brand-card to-brand-dark p-10 rounded-2xl border border-brand-border text-center shadow-xl relative overflow-hidden">
-            <!-- Icono decorativo de candado -->
+            <!-- Icono decorativo de candado (SVG puro) -->
             <svg class="absolute -bottom-10 -right-10 w-64 h-64 text-white/[0.03]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 17a2 2 0 100-4 2 2 0 000 4zm6-9V6a6 6 0 10-12 0v2h-1a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V10a2 2 0 00-2-2h-1zm-6-5a4 4 0 014 4v2H8V6a4 4 0 014-4z"></path></svg>
             
             <div class="relative z-10">
@@ -304,7 +276,8 @@
     <footer class="border-t border-brand-border py-8 text-center bg-brand-dark">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center gap-2">
-                <img src="ChronoPulse.png" alt="Logo Footer" class="h-6 w-auto grayscale opacity-50">
+                <!-- Tu Logo Principal en el Footer -->
+                <img src="ChronoPulse.png" alt="Logo Footer Chrono Pulse" class="h-6 w-auto grayscale opacity-50">
             </div>
             <p class="text-xs font-mono text-gray-500">
                 CHRONO PULSE 00:17.086 © 2026 | Desarrollado por Castro Ivana Guadalupe.
